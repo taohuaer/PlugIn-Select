@@ -1,11 +1,10 @@
-# PlugIn-Select
+# plugIn-myselect
 
 自定义下拉箭头样式的select插件，兼容IE9及以上。
 
 
 ## 效果展示
 ![效果](https://github.com/taohuaer/PlugIn-Select/blob/master/select.gif)
-[Live Demo](https://github.com/taohuaer/PlugIn-Select/blob/master/select.html)
 ## 使用说明
 
 1. 下载插件源码
@@ -52,7 +51,7 @@ var defaluts = {
 ```
 
 ## 浏览器兼容版本
-    IE9+
+    IE9+及以上
     谷歌
     火狐
     360
