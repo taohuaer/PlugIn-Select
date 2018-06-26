@@ -17,40 +17,37 @@
       </div>
     ```
 
-4. 引入插件相关`css`
+3. 引入插件相关`css`
     
-    ```html
-    ```
+    此部分可跟需求自己补充，可参考在select.html中css样式
 
-5. 引入插件`js`文件
+
+4. 引入插件`js`文件
 
     ```html
     <script src="~/select.min.js"></script>
     ```
 
-6. 初始化插件
-    
-    ```js    
+5. 初始化插件
+  
+```js    
    $("#select").mySelect({
        msg:["第一个","第二个","第三个","第四个"],
-       shownum:0,
-       callback:function(ele) {
-        console.log(ele.index());
-       }    
+       shownum:0   
   });
 
-    ```
+```
 
 
 ## 参数设置
 
 ```js
 var defaluts = {
-     msg:["第一个","第二个","第三个","第四个"],  //默认你需要的选项
-       shownum:0,   // 选择不展开时选中的是第几个，默认是0开始，也就是上述“第一个”
-       callback:function(ele) {
+     msg:[],  //默认你需要的选项
+     shownum:0,   // 选择不展开时选中的是第几个，默认是0开始，也就是上述“第一个”
+     callback:function(ele) {
         //console.log(ele.index());  //此处返回你当前点击的选项的索引
-       }  
+     }  
 };
 ```
 
