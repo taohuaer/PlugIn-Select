@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>自定义select插件</title>
+	<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="select.js"></script>
+</head>
+<style>
+*{
+	margin:0;
+	padding:0;
+}
+li{
+	list-style: none;
+}
+#select{
+	    width: 130px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    color: #333333;
+    border: 1px solid #2165D7;
+    border-radius: 4px;
+    position: relative;
+    z-index: 9;;
+    margin:200px auto;
+}
+#select img{
+	    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: -1px;
+    z-index: 0;
+    cursor: pointer;
+}
+#select p{
+	    width: 130px;
+    height: 30px;
+    position: relative;
+    z-index: 99;
+    padding-left: 10px;
+    cursor: pointer;
+}
+#select ul{
+	    width: 130px;
+    box-shadow: 0 2px 4px 0 rgba(9, 88, 187, 0.2);
+    background: #fff;
+    margin-top: 1px;
+}
+#select ul li{
+	padding-left:10px;
+	box-sizing: border-box;
+}
+#select ul li:hover{
+	    color: #fff;
+    background: #2165D7;
+}
+</style>
+<body>
+	  <div id="select">
+	  <img src="select.png" alt="">
+	  </div>
+<script>
+$(document).ready(function(){
+
+$("#select").mySelect({
+       msg:["第一个","第二个","第三个","第四个"],
+       shownum:0,
+       callback:function(ele) {
+        console.log(ele.index());
+       }    
+ });
+
+});
+
+</script>
+</body>
+
+</html>
