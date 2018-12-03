@@ -1,4 +1,4 @@
-# huaSelect
+# Select
 
 自定义下拉箭头样式的select插件，兼容IE9及以上。
 
